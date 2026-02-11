@@ -1,0 +1,87 @@
+{
+  "Actor": {
+    "types": ["dweller", "creature"],
+    "dweller": {
+      "details": {
+        "kinfolk": "",
+        "mutation": "",
+        "evolution": "",
+        "description": ""
+      },
+      "attributes": {
+        "muscles": { "magnitude": 1, "units": 0 },
+        "brains": { "magnitude": 1, "units": 0 },
+        "vibes": { "magnitude": 1, "units": 0 }
+      },
+      "resources": {
+        "hits": { "value": 3, "max": 3 },
+        "armor": { "value": 0 },
+        "defense": { "value": 0 }
+      },
+      "notes": ""
+    },
+    "creature": {
+      "details": {
+        "role": "",
+        "description": ""
+      },
+      "attributes": {
+        "muscles": { "magnitude": 1, "units": 0 },
+        "brains": { "magnitude": 1, "units": 0 },
+        "vibes": { "magnitude": 1, "units": 0 }
+      },
+      "resources": {
+        "hits": { "value": 3, "max": 3 },
+        "armor": { "value": 0 },
+        "defense": { "value": 0 }
+      },
+      "notes": ""
+    }
+  },
+  "Item": {
+    "types": ["ability", "mutation", "kinfolk", "weapon", "armor", "item"],
+    "ability": {
+      "description": "",
+      "cost": "",
+      "effect": "",
+      "skuz": "",
+      "throw": "",
+      "tags": []
+    },
+    "mutation": {
+      "description": "",
+      "cost": "",
+      "effect": "",
+      "skuz": "",
+      "throw": "",
+      "tags": []
+    },
+    "kinfolk": {
+      "description": "",
+      "starting": "",
+      "skuz": "",
+      "abilities": ""
+    },
+    "weapon": {
+      "description": "",
+      "damage": "",
+      "range": "",
+      "effect": "",
+      "cost": "",
+      "tags": []
+    },
+    "armor": {
+      "description": "",
+      "armor": 0,
+      "effect": "",
+      "cost": "",
+      "tags": []
+    },
+    "item": {
+      "description": "",
+      "effect": "",
+      "cost": "",
+      "tags": []
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<form class="repugnant-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
+      <div class="header-meta">
+        <label>Kinfolk</label>
+        <input name="system.details.kinfolk" type="text" value="{{system.details.kinfolk}}" />
+        <label>Mutation</label>
+        <input name="system.details.mutation" type="text" value="{{system.details.mutation}}" />
+        <label>Evolution</label>
+        <input name="system.details.evolution" type="text" value="{{system.details.evolution}}" />
+      </div>
+    </div>
+  </header>
+
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="stats">Stats</a>
+    <a class="item" data-tab="items">Items</a>
+    <a class="item" data-tab="notes">Notes</a>
+  </nav>
+
+  <section class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="stats">
+      <div class="grid two">
+        <section>
+          <h2>Skuz</h2>
+          <div class="stat-row">
+            <label>Muscles</label>
+            <input name="system.attributes.muscles.magnitude" type="number" value="{{system.attributes.muscles.magnitude}}" />
+            <input name="system.attributes.muscles.units" type="number" value="{{system.attributes.muscles.units}}" />
+          </div>
+          <div class="stat-row">
+            <label>Brains</label>
+            <input name="system.attributes.brains.magnitude" type="number" value="{{system.attributes.brains.magnitude}}" />
+            <input name="system.attributes.brains.units" type="number" value="{{system.attributes.brains.units}}" />
+          </div>
+          <div class="stat-row">
+            <label>Vibes</label>
+            <input name="system.attributes.vibes.magnitude" type="number" value="{{system.attributes.vibes.magnitude}}" />
+            <input name="system.attributes.vibes.units" type="number" value="{{system.attributes.vibes.units}}" />
+          </div>
+          <button type="button" class="chit-throw">Chit Throw</button>
+        </section>
+
+        <section>
+          <h2>Resources</h2>
+          <div class="stat-row">
+            <label>Hits</label>
+            <input name="system.resources.hits.value" type="number" value="{{system.resources.hits.value}}" />
+            <span>/</span>
+            <input name="system.resources.hits.max" type="number" value="{{system.resources.hits.max}}" />
+          </div>
+          <div class="stat-row">
+            <label>Armor</label>
+            <input name="system.resources.armor.value" type="number" value="{{system.resources.armor.value}}" />
+          </div>
+          <div class="stat-row">
+            <label>Defense</label>
+            <input name="system.resources.defense.value" type="number" value="{{system.resources.defense.value}}" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="items">
+      <section>
+        <h2>Abilities</h2>
+        <ul class="item-list">
+          {{#each itemsByType.ability as |item|}}
+          <li class="item" data-item-id="{{item._id}}">
+            <div class="item-name">{{item.name}}</div>
+            <div class="item-detail">{{item.system.cost}}</div>
+            <div class="item-detail">{{item.system.effect}}</div>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+      <section>
+        <h2>Mutations</h2>
+        <ul class="item-list">
+          {{#each itemsByType.mutation as |item|}}
+          <li class="item" data-item-id="{{item._id}}">
+            <div class="item-name">{{item.name}}</div>
+            <div class="item-detail">{{item.system.cost}}</div>
+            <div class="item-detail">{{item.system.effect}}</div>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+      <section>
+        <h2>Gear</h2>
+        <ul class="item-list">
+          {{#each itemsByType.weapon as |item|}}
+          <li class="item" data-item-id="{{item._id}}">
+            <div class="item-name">{{item.name}}</div>
+            <div class="item-detail">{{item.system.effect}}</div>
+          </li>
+          {{/each}}
+          {{#each itemsByType.armor as |item|}}
+          <li class="item" data-item-id="{{item._id}}">
+            <div class="item-name">{{item.name}}</div>
+            <div class="item-detail">Armor {{item.system.armor}}</div>
+          </li>
+          {{/each}}
+          {{#each itemsByType.item as |item|}}
+          <li class="item" data-item-id="{{item._id}}">
+            <div class="item-name">{{item.name}}</div>
+            <div class="item-detail">{{item.system.effect}}</div>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+    </div>
+
+    <div class="tab" data-group="primary" data-tab="notes">
+      <textarea name="system.notes" rows="16">{{system.notes}}</textarea>
+    </div>
+  </section>
+</form>

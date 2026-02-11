@@ -1,0 +1,67 @@
+.repugnant.sheet {
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+}
+
+.repugnant .sheet-header {
+  display: flex;
+  gap: 12px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 8px;
+}
+
+.repugnant .profile-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.repugnant .header-fields {
+  flex: 1;
+}
+
+.repugnant .header-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+}
+
+.repugnant .sheet-tabs {
+  margin: 8px 0;
+  border-bottom: 1px solid #666;
+}
+
+.repugnant .sheet-tabs .item {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.repugnant .grid.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.repugnant .stat-row {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.repugnant .item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.repugnant .item-list .item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 6px;
+  padding: 4px 0;
+  border-bottom: 1px dashed #555;
+}
+
+.repugnant .item-name {
+  font-weight: bold;
+}

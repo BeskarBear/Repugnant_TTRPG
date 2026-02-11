@@ -1,0 +1,37 @@
+{
+  "id": "repugnant",
+  "name": "repugnant",
+  "title": "Repugnant",
+  "description": "Repugnant TTRPG system.",
+  "version": "0.1.0",
+  "minimumCoreVersion": "13",
+  "compatibleCoreVersion": "13",
+  "authors": [
+    {
+      "name": "Repugnant System"
+    }
+  ],
+  "esmodules": [
+    "scripts/repugnant.js"
+  ],
+  "styles": [
+    "styles/repugnant.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "repugnant-items",
+      "label": "Repugnant Items",
+      "path": "packs/repugnant-items.db",
+      "type": "Item",
+      "system": "repugnant"
+    }
+  ],
+  "socket": true
+}

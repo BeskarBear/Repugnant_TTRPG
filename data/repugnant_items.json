@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Shatter Shockers",
+    "type": "weapon",
+    "description": "A weapon that delivers a shock causing 3\u00a2cnhittge target to release their bowels. Cost: 1 Muscles Effect: +17 .",
+    "cost": "1 Muscles Effect: +17",
+    "effect": "+17"
+  },
+  {
+    "name": "Suck \u2018N' Blow",
+    "type": "item",
+    "description": "Sucks up any item or rubbish and\u201cLtem Effect near range. Cost: 1 VWibeswbitect: +1.Chits & the hard iest foes.",
+    "cost": "1 VWibeswbitect: +1",
+    "effect": ""
+  },
+  {
+    "name": "Dumbster",
+    "type": "weapon",
+    "description": "A giant mallet that can nstun even Cost: 1 Brains Effect: +1 Chit, Stu disgusting, Misolsid [J] Wall of Shame: An up to 10'x20' wall of Wall detritus is formed. (Gost. 2gvabes Effect: Shape work item out of",
+    "cost": "1 Brains Effect: +1 Chit, Stu disgusting, Misolsid [J] Wall of Shame: An up to 10'x20' wall of Wall detritus is formed",
+    "effect": "+1 Chit, Stu disgusting, Misolsid [J] Wall of Shame: An up to 10'x20' wall of Wall detritus is formed"
+  },
+  {
+    "name": "Messy Masterwork",
+    "type": "item",
+    "description": "You create a Wor k with the The Collector to trash that only you can wield. Brains Effects: +X Chits \u00ab",
+    "cost": "",
+    "effect": ""
+  },
+  {
+    "name": "Create Stench",
+    "type": "item",
+    "description": "Emit a cloud of fumes choosing up to a near distance away. Create",
+    "cost": "",
+    "effect": ""
+  },
+  {
+    "name": "Flatulence of Flight",
+    "type": "item",
+    "description": "",
+    "cost": "",
+    "effect": ""
+  }
+]

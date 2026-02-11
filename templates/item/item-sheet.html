@@ -1,0 +1,31 @@
+<form class="repugnant-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
+      <div class="header-meta">
+        <label>Type</label>
+        <span>{{item.type}}</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="sheet-body">
+    <div class="grid two">
+      <div>
+        <label>Description</label>
+        <textarea name="system.description" rows="6">{{system.description}}</textarea>
+      </div>
+      <div>
+        <label>Cost</label>
+        <input name="system.cost" type="text" value="{{system.cost}}" />
+        <label>Effect</label>
+        <textarea name="system.effect" rows="4">{{system.effect}}</textarea>
+        <label>Skuz</label>
+        <input name="system.skuz" type="text" value="{{system.skuz}}" />
+        <label>Throw</label>
+        <input name="system.throw" type="text" value="{{system.throw}}" />
+      </div>
+    </div>
+  </section>
+</form>
